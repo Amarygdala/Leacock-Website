@@ -1,0 +1,38 @@
+﻿body {
+    background-color:aliceblue;
+   
+}
+
+#box{
+    width:123px;
+    height:200px;
+    background-color:coral;
+    border: 5px solid black;
+}
+
+#btn1{
+    width: 10vw;
+    height: 10vw;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+
+}
+.btn1:click{background: rgb(156, 10, 10);}
+
+/* Style buttons */
+.buttonload {
+    background-color: yellow; /* Green background */
+    border: none; /* Remove borders */
+    color: black; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px /* Set a font size */
+    
+  }
+
+  .buttonload:hover{background: rgb(156, 10, 10);}

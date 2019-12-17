@@ -1,14 +1,13 @@
 ﻿body {
+    background-image:  url("./RayOfLight-Lodian.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
     background-color:aliceblue;
-   
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-#box{
-    width:123px;
-    height:200px;
-    background-color:coral;
-    border: 5px solid black;
-}
 
 #btn1{
     width: 10vw;
@@ -18,11 +17,17 @@
     background-color: royalblue;
     border-radius: 40px;
 }
+
 #title{
     text-align: center;
     font-size: 50px;
-
 }
+#title h1{
+    margin-top: 0;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .btn1:click{background: rgb(156, 10, 10);}
 
 /* Style buttons */

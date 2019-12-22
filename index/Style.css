@@ -16,13 +16,13 @@ nav{/*Nav bar itself*/
 
 nav ul{/*all items in the nav*/
     float: left;
-    margin: 0;
 }
 
 nav ul li{/*individual items in the list*/
     float: left;
     list-style: none;
     position: relative;
+
 }
 nav ul li:hover ul{/*on hover of dropdown*/
     display: block;
@@ -31,8 +31,9 @@ nav ul li a{/*text in the list*/
     display: block;
     font-family: sans-serif;
     color: black;
-    font-size: 19px;
-    padding: 24px 24px;
+    font-size: 18px;
+    padding: 10px 24px;
+    padding-bottom: 23px;
     text-decoration: none;
 
 }

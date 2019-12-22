@@ -1,17 +1,31 @@
-﻿body {
-    background-image:  url("./RayOfLight-Lodian.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-color:aliceblue;
+﻿
+body {
+    background-color:white;
     border: 0;
     margin: 0;
     padding: 0;
 }
-
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(128, 133, 64);
+    width: 100%;
+    height: 50vw;
+    background-image: url("./RayOfLight-Lodian.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+header h1{
+    font-size: 60px;
+}
 nav{/*Nav bar itself*/
+    position: sticky;
+    top:0;
     width: 100%;
     height: 70px;
     background-color: white;
+    border-bottom: 5px solid rgb(0, 139, 139);
 }
 
 nav ul{/*all items in the nav*/
@@ -34,7 +48,6 @@ nav ul li a{/*text in the list*/
     font-size: 19px;
     padding: 24px 24px;
     text-decoration: none;
-
 }
 nav ul li ul{/*drop down*/
     display: none;
@@ -47,6 +60,7 @@ nav ul li ul li{/*list in the dropdown*/
 }
 nav ul li ul li a{/*individual items in the dropdown*/
     padding: 9px 24px;
+    border-top: 1px solid rgb(0, 139, 139);
 }
 nav ul li ul li a:hover{/*on hover of dropdown items*/
     padding: 9px 24px;
@@ -59,16 +73,6 @@ nav ul li ul li a:hover{/*on hover of dropdown items*/
     font-family: 'Courier New', Courier, monospace;
     background-color: royalblue;
     border-radius: 40px;
-}
-
-#title{
-    text-align: center;
-    font-size: 50px;
-}
-#title h1{
-    margin-top: 0;
-    color: whitesmoke;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .btn1:click{background: rgb(156, 10, 10);}

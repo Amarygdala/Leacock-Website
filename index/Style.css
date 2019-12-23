@@ -9,7 +9,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(128, 133, 64);
+    color: #f4a024;
     width: 100%;
     height: 50vw;
     background-image: url("./RayOfLight-Lodian.jpg");
@@ -17,7 +17,8 @@ header{
     background-size:cover;
 }
 header h1{
-    font-size: 60px;
+    font-size: 8rem;
+    font-family: sans-serif;
 }
 nav{/*Nav bar itself*/
     position: sticky;
@@ -25,7 +26,7 @@ nav{/*Nav bar itself*/
     width: 100%;
     height: 70px;
     background-color: white;
-    border-bottom: 5px solid rgb(0, 139, 139);
+    border-bottom: 5px solid #49688e;
 }
 
 nav ul{/*all items in the nav*/
@@ -60,7 +61,7 @@ nav ul li ul li{/*list in the dropdown*/
 }
 nav ul li ul li a{/*individual items in the dropdown*/
     padding: 9px 24px;
-    border-top: 1px solid rgb(0, 139, 139);
+    border-top: 1px solid #49688e;
 }
 nav ul li ul li a:hover{/*on hover of dropdown items*/
     padding: 9px 24px;

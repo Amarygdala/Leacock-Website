@@ -13,7 +13,7 @@ nav{/*Nav bar itself*/
     height: 70px;
     background-color: white;
     border-bottom: 5px solid #49688e;
-    z-index: 1;
+    z-index: 999;
 }
 
 nav ul{/*all items in the nav*/
@@ -69,6 +69,13 @@ header{
     background-image: url("./RayOfLight-Lodian.jpg");
     background-repeat:no-repeat;
     background-size:cover;
+    /*Make LCC title unhighlightable on all browsers*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 header h1{
     font-size: 8rem;
@@ -88,23 +95,46 @@ header a{
     height: 40vw;
     border: 1px solid black;
 }
-#main-wrapper #image-holder, #main-wrapper #textbox-holder{
+#main-wrapper .textbox-holder{
     width: 50%;
     height: 100%;
-    display: flex;
 }
 
-#main-wrapper #image-holder #images{
-    width: 54%;
-    height: 44%;
+#main-wrapper .img-holder {
+    width: 50%;
+    height: 100%;
     background-color: blue;
-    margin: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
-#main-wrapper #textbox-holder #textbox{
-    width: 54%;
-    height: 44%;
-    background-color: red;
-    margin: auto;
+#main-wrapper .img-holder .images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+#main-wrapper .img-holder #img3{
+    background-image: url(pinksnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#main-wrapper .img-holder #img2{
+    background-image: url(pinksnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#main-wrapper .img-holder #img1{
+    background-image: url(pinksnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #btn1{
     width: 10vw;
